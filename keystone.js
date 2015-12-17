@@ -13,7 +13,7 @@ keystone.init({
 
 	'name': 'zhch0633blog',
 	'brand': 'zhch0633blog',
-	'port': 80,
+	'port': 3000,
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',

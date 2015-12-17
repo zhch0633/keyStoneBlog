@@ -13,15 +13,15 @@ keystone.init({
 
 	'name': 'zhch0633blog',
 	'brand': 'zhch0633blog',
-	'port': 3000,
+	'port': 3001,
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
-	
+
 	'emails': 'templates/emails',
-	
+
 	'auto update': true,
 	'session': true,
 	'auth': true,

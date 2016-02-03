@@ -9,7 +9,7 @@ exports = module.exports = function(req, res) {
 	// Init locals
 	locals.section = 'blog';
 	locals.filters = {
-		category: req.params.category
+		category	: req.params.category
 	};
 	locals.data = {
 		posts: [],

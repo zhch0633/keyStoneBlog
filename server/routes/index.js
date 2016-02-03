@@ -28,13 +28,17 @@ keystone.pre('render', middleware.flashMessages);
 
 // Import Route Controllers
 var routes = {
-	views: importRoutes('./views')
+	views: importRoutes('./views'),
+	apis: importRoutes('./api')
 };
 
 // Setup Route Bindings
 exports = module.exports = function(app) {
+	//setting up api 
+	app.get('/testApi',routes.apis.testApi);
+	app.get('/api/education',routes.apis.myEducationApi);
 	
-	// Views
+	// Views for static management
 	app.get('/', routes.views.index);
 	app.get('/blog/:category?', routes.views.blog);
 	app.get('/blog/post/:post', routes.views.post);
